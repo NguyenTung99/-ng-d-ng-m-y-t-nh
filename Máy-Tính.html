@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng máy tính</title>
+</head>
+<body>
+<b>Caculator</b><br>
+<br>
+<td><label for="so_1"><input type="number" id="so_1"></label></td>
+<td><label for="so_2"><input type="number" id="so_2"></label></td>
+<br><br>
+<td><input type='button' id="Addition" value="Addition(+)" onclick="cong()"></td>
+<td><input type='button' id="Subtraction" value="Subtractinom(-)" onclick="tru()"></td>
+<td><input type='button' id="Multiplication" value="Multiplication(X)" onclick="nhan()"></td>
+<td><input type='button' id="Dividsion" value="Dividsion(+)" onclick="chia()"></td><br>
+ket_qua:
+<text id='ket_qua'></text>
+</body>
+<script>
+    function cong() {
+        let a = parseFloat(document.getElementById("so_1").value);
+        let b = parseFloat(document.getElementById("so_2").value);
+        let c;
+        c = a + b;
+        document.getElementById('ket_qua').innerHTML = c;
+    }
+    function tru() {
+        let a = parseFloat(document.getElementById("so_1").value);
+        let b = parseFloat(document.getElementById("so_2").value);
+        let c;
+        c = a - b;
+        document.getElementById('ket_qua').innerHTML = c;
+    }
+    function nhan() {
+        let a = parseFloat(document.getElementById("so_1").value);
+        let b = parseFloat(document.getElementById("so_2").value);
+        let c;
+        c = a * b;
+        document.getElementById('ket_qua').innerHTML = c;
+    }
+    function chia() {
+        let a = parseFloat(document.getElementById("so_1").value);
+        let b = parseFloat(document.getElementById("so_2").value);
+        let c;
+        c = a/ b;
+        document.getElementById('ket_qua').innerHTML = c;
+    }
+</script>
+</html>
